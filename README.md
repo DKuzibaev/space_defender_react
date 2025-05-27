@@ -1,12 +1,70 @@
-# React + Vite
+🚀 Space Defender
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интерактивная мини-игра с анимированным звездным фоном, созданная на React. Игрок начинает с главного меню и может запустить игру, перейти к настройкам или выйти.
 
-Currently, two official plugins are available:
+📦 Стек технологий
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    React
 
-## Expanding the ESLint configuration
+    React Hooks (useState, useCallback)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    tsparticles / react-tsparticles — для звездного анимированного фона
+
+    SCSS — стилизация интерфейса
+
+📂 Структура проекта
+
+/src
+  /components
+    GameMenu.jsx
+    GameCanvas.jsx
+    StarfieldBackground.jsx
+  /styles
+    GameMenu.scss
+    GameCanvas.scss
+    Starfield.scss
+  App.jsx
+  index.scss
+
+🔧 Установка и запуск
+
+    Клонируй репозиторий:
+
+git clone https://github.com/your-username/space-defender.git
+cd space-defender
+
+Установи зависимости:
+
+npm install
+
+Запусти проект:
+
+    npm run dev
+
+    Используется Vite для быстрого запуска и сборки (предполагается, что vite уже настроен).
+
+✨ Функции
+
+    Анимированный звёздный фон (на основе tsparticles)
+
+    Главное меню с кнопками:
+
+        «Начать игру»
+
+        «Настройки»
+
+        «Выход»
+
+    Переключение экранов без перезагрузки
+
+🔮 Планы на будущее
+
+    Реализация логики игры на экране GameCanvas
+
+    Добавление счётчиков, уровней и врагов
+
+    Поддержка звуков и музыки
+
+🛠️ Установка tsparticles (если не установлено) (test)
+
+npm install react-tsparticles tsparticles
