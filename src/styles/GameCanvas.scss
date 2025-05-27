@@ -1,0 +1,29 @@
+.game-canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+}
